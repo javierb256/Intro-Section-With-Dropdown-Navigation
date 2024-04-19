@@ -55,18 +55,31 @@ body {
     background-color: var(--almost-white);
 }
 
+h1 {
+  font-size: 5rem;
+  text-wrap: balance;
+}
+
+p {
+  color: var(--medium-gray);
+  width: 74%;
+  line-height: 27px;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   color: red;
 }
 
 .logo{
   display: flex;
-  /* height: 18px; */
-  height: 20px;
+  height: 25px;
+  margin-top: 8px;
 }
 
 
@@ -74,7 +87,6 @@ ul {
   display: flex;
   gap: 40px;
   list-style-type: none;
-  font-size: 12px;
   font-weight: 500;
   color: red;
 }
@@ -90,6 +102,13 @@ a {
   gap: 30px;
 }
 
+.left-nav,
+.right-nav,
+.right-nav button {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 .left-nav a:hover,
 .right-nav a:hover,
 .right-nav button {
@@ -98,10 +117,9 @@ a {
 }
 
 .right-nav {
-  font-size: 12px;
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 45px;
 }
 
 .right-nav button {
@@ -109,14 +127,54 @@ a {
   appearance: none;
   border: none;
   color: var(--medium-gray);
-  border: 1px solid var(--medium-gray);
+  border: 2px solid var(--medium-gray);
   border-radius: 9px;
   padding: .4rem 1rem;
+  font-weight: 500;
 }
 
 .right-nav button:hover {
   color: var(--almost-black);
   border-color: var(--almost-black);
+}
+
+main {
+  display: flex;
+  margin: 0 auto;
+  width: 85vw;
+  height: 85vh;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 40%;
+  /* justify-content: space-between; */
+}
+
+.info button {
+  background: none;
+  appearance: none;
+  border: none;
+  color: var(--almost-white);
+  background-color: var(--almost-black);
+  /* border: 1px solid var(--medium-gray); */
+  border-radius: 12px;
+  padding: 1rem 0rem;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+  /* justify-self: flex-end; */
 }
 
 
