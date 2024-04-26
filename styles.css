@@ -142,7 +142,7 @@ main {
   display: flex;
   margin: 0 auto;
   width: 85vw;
-  height: 85vh;
+  height: 75vh;
   justify-content: space-between;
   gap: 150px;
 }
@@ -168,6 +168,11 @@ main {
   font-size: 1rem;
   font-weight: 700;
   margin-top: 3rem;
+}
+
+#hero-image {
+  height: 680px;
+  margin-top: auto;
 }
 
 .sponsors {
