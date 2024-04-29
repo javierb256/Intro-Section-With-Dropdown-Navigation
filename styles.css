@@ -177,11 +177,16 @@ main {
 
 .sponsors {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: center;
   margin-top: 7rem;
+  height: 22px;
+  gap: 30px;
   /* justify-self: flex-end; */
 }
-
+.sponsors :nth-child(2){
+height:  40px;
+}
 
 footer { font-size: 11px; text-align: center; }
 footer a { color: hsl(228, 45%, 44%); }
