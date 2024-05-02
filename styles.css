@@ -187,6 +187,11 @@ a {
   /* background: url("./images/icon-arrow-up.svg") no-repeat; */
 }
 
+.popover-item:hover {
+  /* good for extending element reach */
+  margin-bottom: -60px;
+}
+
 .popover-item:hover .features-list,
 .popover-item:hover .company-list{
   opacity: 1;
@@ -196,6 +201,12 @@ a {
 .popover-item:hover a::after{
   content: url("./images/icon-arrow-up.svg");
   margin-left: 6px;
+}
+
+.features-list li:hover,
+.company-list li:hover {
+  cursor: pointer;
+  color: var(--almost-black);
 }
 main {
   display: flex;
