@@ -114,6 +114,10 @@ a {
   cursor: pointer;
 }
 
+.left-nav-mobile {
+  display: none;
+}
+
 .right-nav {
   display: flex;
   align-items: center;
@@ -337,6 +341,10 @@ footer a { color: hsl(228, 45%, 44%); }
   
   .left-nav, .right-nav{
     display: none;
+  }
+
+  .left-nav-mobile {
+    display: block;
   }
 
   .right-nav-mobile {
