@@ -353,22 +353,31 @@ footer a { color: hsl(228, 45%, 44%); }
   }
 
   .right-nav-mobile {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 25px;
+    position: relative;
   }
 
-  .right-nav-mobile::before {
-    content: "";
+  .right-nav-mobile span {
     display: block;
-    width: 50px;
-    height: 5px;
-    background-color: blue;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: var(--almost-black);
   }
 
-  .right-nav-mobile {
-    width: 50px;
-    height: 4px;
-    background-color: red;
+  .right-nav-mobile span:nth-child(1){
+    top: 0px;
+  }
+  .right-nav-mobile span:nth-child(2) {
+    top: 10px;
+  }
+  .right-nav-mobile span:nth-child(3) {
+    top: 20px;
+  }
+
+  .right-nav-mobile:hover {
+    cursor: pointer;
   }
 
   main {
