@@ -124,6 +124,10 @@ a {
   gap: 45px;
 }
 
+.right-nav-mobile{
+  display: none;
+}
+
 .right-nav button {
   background: none;
   appearance: none;
@@ -343,7 +347,8 @@ footer a { color: hsl(228, 45%, 44%); }
     display: none;
   }
 
-  .left-nav-mobile {
+  .left-nav-mobile,
+  .right-nav-mobile {
     display: block;
   }
 
