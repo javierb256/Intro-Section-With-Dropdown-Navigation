@@ -53,6 +53,7 @@ body {
     font-size: 18px;
     font-family: "Epilogue", sans-serif;
     background-color: var(--almost-white);
+    position: relative;
 }
 
 h1 {
@@ -67,7 +68,27 @@ p {
   font-weight: 500;
   margin-top: 3rem;
 }
+.overlay {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  background-color: hsla(0, 0%, 0%, 0.529);
+  height: 100%;
+  width: 100vh;
+}
 
+.overlay-menu {
+  
+  background-color: var(--almost-white);
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+}
+
+.overlay-menu ul {
+  display: flex;
+  flex-direction: column;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -339,12 +360,22 @@ footer a { color: hsl(228, 45%, 44%); }
 }
 
 @media screen and (max-width: 800px) {
+  .active {
+    display: block;
+  }
   nav {
     padding: 1.5rem 1rem;
   }
   
   .left-nav, .right-nav{
     display: none;
+  }
+
+  .left-nav-mobile {
+    width: 20%;
+  }
+  .right-nav-mobile {
+    width: 80%;
   }
 
   .left-nav-mobile,
