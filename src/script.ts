@@ -1,6 +1,7 @@
 const rightNavMobile = document.querySelector<HTMLDivElement>(".right-nav-mobile")!;
 const navbar = document.querySelector<HTMLElement>("nav")!;
 const overlay = document.querySelector<HTMLDivElement>(".overlay")!;
+const closeOverlay = document.querySelector<HTMLDListElement>(".close-overlay")!;
 
 rightNavMobile.addEventListener("click", ()=> {
     // navbar.style.height = "100vh"
@@ -9,4 +10,8 @@ rightNavMobile.addEventListener("click", ()=> {
     overlay.classList.toggle("active")
     // alert("chil")
    
+})
+
+closeOverlay.addEventListener("click", ()=> {
+    overlay.classList.toggle("active");
 })

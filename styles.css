@@ -74,7 +74,7 @@ p {
   z-index: 5;
   background-color: hsla(0, 0%, 0%, 0.529);
   height: 100%;
-  width: 100vh;
+  width: 100%;
 }
 
 .overlay-menu {
@@ -83,11 +83,24 @@ p {
   width: 80%;
   height: 100%;
   margin-left: auto;
+  padding: 1.5rem 1.7rem;
+  position: fixed;
+  right: 0;
 }
 
 .overlay-menu ul {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
+}
+
+.overlay-menu li {
+  color: var(--medium-gray);
+  cursor: pointer;
+}
+
+.overlay-menu ul button {
+  background-color: red;
 }
 nav {
   display: flex;
@@ -371,12 +384,12 @@ footer a { color: hsl(228, 45%, 44%); }
     display: none;
   }
 
-  .left-nav-mobile {
+  /* .left-nav-mobile {
     width: 20%;
   }
   .right-nav-mobile {
     width: 80%;
-  }
+  } */
 
   .left-nav-mobile,
   .right-nav-mobile {
@@ -405,6 +418,36 @@ footer a { color: hsl(228, 45%, 44%); }
   }
   .right-nav-mobile span:nth-child(3) {
     top: 20px;
+  }
+
+  .close-overlay {
+    height: 25px;
+    width: 26px;
+    margin-left: auto;
+  }
+
+  .close-overlay:hover {
+    cursor: pointer;
+  }
+
+  .close-overlay span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--almost-black);
+  }
+
+  .close-overlay span:nth-child(1){
+    position: relative;
+    transform: rotate(45deg);
+    top: 13px;
+    width: 36px;
+  }
+  .close-overlay span:nth-child(2) {
+    top: 10px;
+    position: relative;
+    transform: rotate(-46deg);
+    width: 35px;
   }
 
   .right-nav-mobile:hover {
